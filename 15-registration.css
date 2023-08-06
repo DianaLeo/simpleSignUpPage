@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    color: #384047;
+}
+
+form {
+    width: 580px;
+    background-color: #f4f7f8;
+    padding: 10px 45px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: none;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+legend {
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+legend::before {
+    content: "";
+    background-color: darkgreen;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    height: 45px;
+    border: none;
+    margin-bottom: 30px;
+    ;
+    background-color: #e8eeef;
+    padding: 10px;
+    color: #8a97a0;
+    font-size: 1rem;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border-radius: 8px;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 4px 4px 4px 0;
+}
+
+input[type="button"] {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    background-color: #4bc970;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+input[type="date"]{
+    position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    z-index: 2;
+}
+
+input[type="date"]::after {
+    content: "";
+    display: inline-block;
+    position:absolute;
+    right:10px;
+    width: 25px;
+    height: 25px;
+    background-color: #4bc970;
+    border-radius: 50%;
+    z-index: 1;
+
+}

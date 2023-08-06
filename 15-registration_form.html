@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./15-registration.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <section>
+    <form onsubmit="return submitHandler()">
+      <h1>Sign Up</h1>
+      <fieldset id="yourBasicInfo">
+        <legend>Basic Info</legend>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName">
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        <label for="username">Userame:</label>
+        <input type="text" id="username">
+        <label for="password">password:</label>
+        <input type="password" id="password">
+      </fieldset>
+      <fieldset id="otherDetails">
+        <legend>Other Details</legend>
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate">
+        <label>Gender:</label><br/>
+        <input type="radio" id='male' name="birthdate" value="male">
+        <label for="male">Male</label><br/>
+        <input type="radio" id='female' name="birthdate" value="female">
+        <label for="female">Female</label><br/>
+        <input type="radio" id='other' name="birthdate" value="other">
+        <label for="other">Other</label>
+      </fieldset>
+      <fieldset>
+        <label for="country">Country</label>
+        <select id="country">
+          <option>Australia</option>
+          <option selected>China</option>
+          <option>USA</option>
+        </select>
+      </fieldset>
+      <input type="checkbox" id='t&c'>
+      <label for="t&c">I'm accepting Terms and Conditions</label><br/>
+      <input type="button" value="Sign Up">
+    </form>
+  </section>
+  <script>
+    function submitHandler() {
+
+    }
+  </script>
+</body>
+
+</html>
